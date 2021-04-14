@@ -1,0 +1,2 @@
+var elemento = document.querySelector('table tbody') //Almacena la selección del primer tbody que encuentre en el form del html!
+elemento.insertAdjacentHTML('beforeend', "<%= escape_javascript(render partial: 'todos/todo', locals: {todo: @todo})%>") // Se inserta un html al final del tbody "beforeend". 
